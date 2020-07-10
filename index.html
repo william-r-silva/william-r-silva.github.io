@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/principal.css">
+    <link rel="stylesheet" type="text/css" href="./css/progress.css">
     <title>Portifólio</title>
 </head>
 <body>
@@ -14,28 +15,110 @@
     <div class="container">
         <div class="details">
             <strong>
-                <h2 class="left">DADOS PESSOAIS</h2>
+                <h2>DADOS PESSOAIS</h2>
             </strong>
-            <div class="sides">
+            <section class="sides">
                 <div class="infos side">
                     <p>Brasileiro 18 anos</p>
                     <p>Celular: (51) 98352-7182</p>
                     <p>Email: william.rocha.silva.wrs@gmail.com</p>
+                    <div class="links">
+                        <a href="https://github.com/william-r-silva">
+                            <img src="./images/github.png" alt="GitHub">
+                        </a>
+                        <a href="https://www.linkedin.com/in/william-r-silva/">
+                            <img src="./images/linkedin.png" alt="LinkedIn">
+                        </a>
+                    </div>
                 </div>
                 <div class="map side">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1731.0551935918375!2d-51.128034599468236!3d-29.80335511449566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519692e2883349d%3A0x1e2cb19982f7c5f!2sR.%20Rio%20Mampituba%2C%20193%2C%20Sapucaia%20do%20Sul%20-%20RS!5e0!3m2!1spt-BR!2sbr!4v1594181897760!5m2!1spt-BR!2sbr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55383.032120573276!2d-51.16805591056659!3d-29.822733067636985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95196ed90156dc55%3A0x8a3d65a6846823ea!2sSapucaia%20do%20Sul%20-%20RS!5e0!3m2!1sen!2sbr!4v1594355917163!5m2!1sen!2sbr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
-            </div>
+            </section>
         </div>
         <div class="details">
             <strong>
-                <h2 class="left">DADOS PESSOAIS</h2>
+                <h2>FORMAÇÃO ACADÊMICA</h2>
             </strong>
-            <p></p>Brasileiro, Solteiro, 18 anos
-            <p>Endereço</p> 
-            <p>Bairro</p>
+            <section class="container-formation">
+                <div class="IFSUL formation">
+                    <a href="http://www.sapucaia.ifsul.edu.br/">
+                        <img src="./images/ifsul.png" alt="IFSUL logo">                
+                    </a>
+                    <div class="progress">    
+                        <script>
+                            const totalDays = 1461; 
+                            const future = new Date('2021-01-01');
+                            const now = new Date();
+                            
+                            const diff = Math.abs(future.getTime() - now.getTime()); // Subtrai uma data pela outra
+                            const leftDays = Math.ceil(diff / (1000 * 60 * 60 * 24));
+
+                            const days = totalDays - leftDays;
+
+                            function concluido(progress){
+                                if(progress < 100){
+                                    return "<b class='not-finished'>(EM PROGRESSO)</b>";
+                                }
+                                return '';
+                            }
+
+                            let progress = Math.round((days * 100) / totalDays);
+                            if(progress > 100){
+                                progress = 100;
+                            }
+
+                            document.write(
+                                `   <p style="width:${progress}%" data-value=${progress}>Ensino Médio Integrado Técnico Em Informática ${concluido(progress)}</p>
+                                    <progress max="100" value="${progress}" class="progress-green"/>
+                                `
+                            );
+                        </script>        
+                    </div>
+                </div>
+            </section>
         </div>
-        
+        <div class="details">
+            <strong>
+                <h2>CONHECIMENTOS TÉCNICOS</h2>
+            </strong>
+            <section class="grafics">
+                <ul>
+                    <li>
+                        <h3>Frontend</h3>
+                        <p style="width:80%" data-value="80">CSS3</p>
+                        <progress max="100" value="80" class="progress-green"></progress>
+                        <p style="width:75%" data-value="75">Android Nativo</p>
+                        <progress max="100" value="75" class="progress-green"></progress>
+                        <p style="width:75%" data-value="75">JavaScript</p>
+                        <progress max="100" value="75" class="progress-green"></progress>
+                        <p style="width:60%" data-value="60">React WEB</p>
+                        <progress max="100" value="60" class="progress-green"></progress>
+                        <p style="width:30%" data-value="30">React Native</p>
+                        <progress max="100" value="30" class="progress-green"></progress>
+                    </li>
+                    <li>
+                        <h3>Backend</h3>
+                        <p style="width:80%" data-value="80">Node.js</p>
+                        <progress max="100" value="80" class="progress-green"></progress> 
+                        <p style="width:80%" data-value="80">SQL</p>
+                        <progress max="100" value="80" class="progress-green"></progress>
+                        <p style="width:75%" data-value="75">Java</p>
+                        <progress max="100" value="75" class="progress-green"></progress>
+                        <p style="width:30%" data-value="30">PHP</p>
+                        <progress max="100" value="30" class="progress-green"></progress>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <div class="details">
+            <strong>
+                <h2>IDIOMAS</h2>
+            </strong>
+            <section class="grafics">
+                Estou editando
+            </section>
+        </div>
     </div>
 </body>
 </html>
