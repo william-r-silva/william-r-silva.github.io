@@ -156,3 +156,25 @@ h2{
 .progress{
     width: 80%;
 }
+
+@media screen and (max-width: 900px){
+    .image{
+        width: 25vw;
+        height: 25vw;
+
+        background-size: 27vw;
+    }
+
+    .sides{
+        flex-direction: column;
+    }
+
+    .side{
+        margin: 20px auto;
+        width: 95%;
+    }
+
+    .container-formation{
+        width: 95%;
+    }
+}
