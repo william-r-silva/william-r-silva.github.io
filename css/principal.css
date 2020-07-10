@@ -60,7 +60,6 @@ h1{
 
 .details{
     width: 100%;
-    min-height: 200px;
     padding-bottom: 10px;
     margin: 10px 0;
 
@@ -170,23 +169,31 @@ h2{
     header{
         justify-content: space-around;
     }
-
+    h2{
+        line-height: 18px;
+    }
+    .links img{
+        height: 45px;
+    }
+    .container-formation img{
+        height: 80px;
+    }
+    .map iframe{
+        width: 90%;
+    }
     .image{
         width: 25vw;
         height: 25vw;
 
         background-size: 27vw;
     }
-
     .sides{
         flex-direction: column;
     }
-
     .side{
         margin: 20px auto;
         width: 95%;
     }
-
     .container-formation{
         width: 95%;
     }
