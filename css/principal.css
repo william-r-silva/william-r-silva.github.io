@@ -94,6 +94,7 @@ h2{
     height: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .side{
@@ -102,6 +103,8 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    font-size: 16px;
 }
 
 .map iframe{
@@ -111,11 +114,7 @@ h2{
 }
 
 .infos{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-
     line-height: 25px;
 }
 
@@ -161,6 +160,31 @@ h2{
     width: 80%;
 }
 
+.time_study{
+    width: 100%;
+
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;   
+}
+
+.school{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.school_logo{
+    height: 120px;
+    margin-bottom: 20px;
+}
+
 @media screen and (max-width: 900px){
     body{
         margin: 0;
@@ -195,8 +219,18 @@ h2{
     .side{
         margin: 20px auto;
         width: 95%;
+
+        font-size: 12px;
     }
     .container-formation{
         width: 95%;
+    }
+    .school{
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .school_logo{
+        height: 60px;
+        margin: 20px 0px;
     }
 }
