@@ -7,7 +7,9 @@ conhecimentos_tecnicos.innerHTML = '<strong>'+
 '<ul>'+
 '    <li>'+
 '        <h3>Frontend</h3>'+
-'        <p style="width:80%" data-value="80">CSS3</p>'+
+'        <p style="width:85%" data-value="85">HTML</p>'+
+'        <progress max="100" value="85" class="progress-green"></progress>'+
+'        <p style="width:80%" data-value="80">CSS</p>'+
 '        <progress max="100" value="80" class="progress-green"></progress>'+
 '        <p style="width:75%" data-value="75">Android Nativo</p>'+
 '        <progress max="100" value="75" class="progress-green"></progress>'+
