@@ -17,8 +17,8 @@ conhecimentos_tecnicos.innerHTML = '<strong>'+
 '        <progress max="100" value="75" class="progress-green"></progress>'+
 '        <p style="width:60%" data-value="60">React WEB</p>'+
 '        <progress max="100" value="60" class="progress-green"></progress>'+
-'        <p style="width:30%" data-value="30">React Native</p>'+
-'        <progress max="100" value="30" class="progress-green"></progress>'+
+'        <p style="width:50%" data-value="50">React Native</p>'+
+'        <progress max="100" value="50" class="progress-green"></progress>'+
 '    </li>'+
 '    <li>'+
 '        <h3>Backend</h3>'+
